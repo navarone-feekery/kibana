@@ -288,3 +288,5 @@ export interface NativeConnector {
 }
 
 export type ConnectorViewIndex = ConnectorIndex & ElasticsearchViewIndexExtension;
+
+export type SelfManagePreference = 'native' | 'selfManaged';

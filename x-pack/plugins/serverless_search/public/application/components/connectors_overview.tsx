@@ -84,7 +84,9 @@ export const ConnectorsOverview = () => {
                 isLoading={isLoading}
                 fill
                 iconType="plusInCircleFilled"
-                onClick={() => createConnector()}
+                onClick={() => {
+                  KibanaLogic.values.navigateToUrl(NEW_INDEX_SELECT_CONNECTOR_PATH);
+                }}
               >
                 {i18n.translate('xpack.serverlessSearch.connectors.createConnector', {
                   defaultMessage: 'Create connector',
