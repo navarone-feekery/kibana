@@ -383,7 +383,6 @@ export const EditFieldRuleFlyout: React.FC<EditFieldRuleFlyoutProps> = ({
                       ]}
                       idSelected={field.value}
                       onChange={field.onChange}
-                      onBlur={field.onBlur}
                     />
                   </EuiFormRow>
                   {field.value === ContentFrom.EXTRACTED ? (
